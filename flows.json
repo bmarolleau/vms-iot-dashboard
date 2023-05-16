@@ -1,0 +1,1858 @@
+[
+    {
+        "id": "a252948d.9913c8",
+        "type": "tab",
+        "label": "Front End Flow",
+        "disabled": true,
+        "info": "This is a demo where I pull data from a Db2 DB, running on AIX. In this case, I have set it up to be able to \"ask\" my data about actors who have played in the Bond Films, with the hope of addressing the Curse of the Bond girls."
+    },
+    {
+        "id": "ddeb3b89.ad9748",
+        "type": "tab",
+        "label": "Webcam-ObjDetection-Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "bdac0d87c40b4bbf",
+        "type": "tab",
+        "label": "VMS-Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "133487408a363c52",
+        "type": "group",
+        "z": "ddeb3b89.ad9748",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "10fc952c32af47f3",
+            "c4c2bbba.d11d18",
+            "ddad62a457a66aac",
+            "e81d84471eea4547",
+            "576036d7a8fadc7e",
+            "8e71bb0b094c4a4f",
+            "5de03aea2cdba7aa",
+            "76ddc3c895f2c1a2",
+            "64a1c9eea8a81648",
+            "a36956bbf31db39d",
+            "e5e585ee49daf687",
+            "6046914919d6f24c"
+        ],
+        "x": 14,
+        "y": 499,
+        "w": 1132,
+        "h": 222
+    },
+    {
+        "id": "221173cd0f9456d8",
+        "type": "group",
+        "z": "ddeb3b89.ad9748",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "800f274b.6632d8",
+            "f0e86e5b.c2eb5",
+            "deade4b6.926288",
+            "d062ebca.fa31e8",
+            "bc8cf8a5.78e498",
+            "1491b6df.c56d59",
+            "1bfbdc10.aade94",
+            "8cd39b6c.1e3608",
+            "75fbf592.1bde7c",
+            "2936e203.f3245e",
+            "3e1bfffc.64667",
+            "847c5db6.44f4e",
+            "90d9565a.3b5ea8",
+            "2be0395e.1879b6",
+            "f1fc41c3.1b5d8",
+            "63fec0e748def931",
+            "0e573484f8a022f9",
+            "1827153afc9006bd",
+            "f296dabfbb4c3f3b",
+            "fb8ba1ce8185f633",
+            "c4297cd8dbea3b98",
+            "200c4d4d1022a0a1",
+            "353686a5dbd50d29",
+            "ad683cf3b1c82709"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 972,
+        "h": 462
+    },
+    {
+        "id": "80abc5d16045e7ca",
+        "type": "group",
+        "z": "bdac0d87c40b4bbf",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "937d602db7d2c135",
+            "9cd4613972dc679e",
+            "74e55c748926830a",
+            "fe57fbd394860edd",
+            "529a01e7f9cf75a1",
+            "0dc08d33ed9e52b1",
+            "3c7ed533fa6bcfed",
+            "789a7db3d0f14b74",
+            "a105ee774dd2eed8",
+            "e8c860f70785270e"
+        ],
+        "x": 14,
+        "y": 319,
+        "w": 932,
+        "h": 222
+    },
+    {
+        "id": "7b39fc278818f569",
+        "type": "group",
+        "z": "bdac0d87c40b4bbf",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "82bd2374ca73c37c",
+            "bfeef5e667edb402",
+            "f26f02f906dc3a67",
+            "cd3a7f15bd06b334",
+            "a949ede7d83c5f71",
+            "9cccd120d123e2c5",
+            "8061feb80b8bfedd",
+            "2615cc32.d5a354",
+            "4c9a286215305705",
+            "a4716315fa8ef6c2",
+            "ecd5a070a3d989c4"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 812,
+        "h": 262
+    },
+    {
+        "id": "9ac835691d91a525",
+        "type": "ODBC pool",
+        "connectionString": "DSN=IBMIDEMO;"
+    },
+    {
+        "id": "95389422.0480c8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#305def",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#3077ce",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#245eb9",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#3077ce",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#3077ce",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#6da0dd",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#3077ce",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "VMS IoT on IBM i",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "5967b7da.b44598",
+        "type": "ui_tab",
+        "name": "Video Management System / IBM i (ActiveMQ and AI in action)",
+        "icon": "camera",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5ecf1e5d.c16c4",
+        "type": "ui_group",
+        "name": "Camera #1 (MQTT)",
+        "tab": "5967b7da.b44598",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a2e8d5347a3fab8b",
+        "type": "ui_tab",
+        "name": "IBMiApp",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1ed33e4c82d4fcac",
+        "type": "ui_group",
+        "name": "IBM i ",
+        "tab": "5967b7da.b44598",
+        "order": 3,
+        "disp": true,
+        "width": "13",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ac59fe1f.451f3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.7.19.71",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d4ea9ce21fb788dd",
+        "type": "ui_tab",
+        "name": "IoT sensor",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "35d4ee9e.dac3fa",
+        "type": "ui_tab",
+        "name": "Customer Relationship Management - IBM i + Machine Learning Driverless AI MOJO Scoring Pipeline",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "53b4eb195de2d526",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "53866cc371f63840",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "08cbf857616a51fa",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "22f5e7d25cdea6f4",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5af32e4176bd0ae2",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7f81193947322281",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "75f722612f7e0c79",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3bfd37acbe314783",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9c7b4d520b66d23e",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ebdbb49c71fd173d",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "82b7bc470bfdab98",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9e4fa8a0f183a619",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3e1d9b5e273edbb6",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "525beed2e3dbea6f",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2410ca6f4d4f26fb",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5ec2337962f30c8a",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a74c97aa2e76f45d",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6caa532bde5b9b93",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ef58b8f8f8fbb7a6",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6be0f866c03b2535",
+        "type": "ui_spacer",
+        "z": "ddeb3b89.ad9748",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "800f274b.6632d8",
+        "type": "ui_webcam",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "group": "5ecf1e5d.c16c4",
+        "order": 1,
+        "width": 10,
+        "height": 5,
+        "countdown": false,
+        "autoStart": true,
+        "hideCaptureButton": true,
+        "showImage": "2",
+        "mirror": true,
+        "format": "jpeg",
+        "x": 440,
+        "y": 180,
+        "wires": [
+            [
+                "f0e86e5b.c2eb5",
+                "deade4b6.926288",
+                "2be0395e.1879b6"
+            ]
+        ]
+    },
+    {
+        "id": "f0e86e5b.c2eb5",
+        "type": "debug",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "deade4b6.926288",
+        "type": "change",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "'/tmp/webcam_'& $moment().format('YYYY-MM-DD-hhmmss') & '.jpeg'",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d062ebca.fa31e8",
+        "type": "file",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 840,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc8cf8a5.78e498",
+        "type": "ui_button",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "group": "5ecf1e5d.c16c4",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Capture CAM#1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-camera fa-2x",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "1491b6df.c56d59"
+            ]
+        ]
+    },
+    {
+        "id": "1491b6df.c56d59",
+        "type": "change",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "msg.capture",
+        "rules": [
+            {
+                "t": "set",
+                "p": "capture",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "800f274b.6632d8",
+                "f0e86e5b.c2eb5"
+            ]
+        ]
+    },
+    {
+        "id": "1bfbdc10.aade94",
+        "type": "ui_button",
+        "z": "ddeb3b89.ad9748",
+        "d": true,
+        "g": "221173cd0f9456d8",
+        "name": "Stop CAM#1",
+        "group": "5ecf1e5d.c16c4",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Stop CAM#1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-stop fa-2x",
+        "payload": "\"\"",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "c4297cd8dbea3b98"
+            ]
+        ]
+    },
+    {
+        "id": "8cd39b6c.1e3608",
+        "type": "tensorflowCoco",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "modelUrl": "http://localhost:1880/coco/model.json",
+        "scoreThreshold": 0.5,
+        "passthru": "bbox",
+        "lineColour": "red",
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "75fbf592.1bde7c",
+                "3e1bfffc.64667",
+                "63fec0e748def931",
+                "76ddc3c895f2c1a2"
+            ]
+        ]
+    },
+    {
+        "id": "75fbf592.1bde7c",
+        "type": "debug",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "2936e203.f3245e",
+        "type": "ui_table",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "group": "5ecf1e5d.c16c4",
+        "name": "",
+        "order": 7,
+        "width": 7,
+        "height": 2,
+        "columns": [
+            {
+                "field": "class",
+                "title": "Detected Object ",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "score",
+                "title": "Score",
+                "width": "",
+                "align": "left",
+                "formatter": "progress",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 430,
+        "y": 440,
+        "wires": [
+            [
+                "f1fc41c3.1b5d8"
+            ]
+        ]
+    },
+    {
+        "id": "3e1bfffc.64667",
+        "type": "change",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append([],payload.{\"class\":class,\"score\":score*100,\"bbox\":bbox})",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 440,
+        "wires": [
+            [
+                "2936e203.f3245e",
+                "200c4d4d1022a0a1"
+            ]
+        ]
+    },
+    {
+        "id": "847c5db6.44f4e",
+        "type": "link in",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "to-webcam",
+        "links": [
+            "23c88371.85c4bc",
+            "70eca315.946a6c",
+            "0e573484f8a022f9",
+            "1827153afc9006bd"
+        ],
+        "x": 285,
+        "y": 220,
+        "wires": [
+            [
+                "800f274b.6632d8"
+            ]
+        ]
+    },
+    {
+        "id": "90d9565a.3b5ea8",
+        "type": "annotate-image",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "fill": "",
+        "stroke": "#9363b7",
+        "lineWidth": 5,
+        "fontSize": 24,
+        "fontColor": "#ffC000",
+        "x": 800,
+        "y": 440,
+        "wires": [
+            [
+                "1827153afc9006bd"
+            ]
+        ]
+    },
+    {
+        "id": "2be0395e.1879b6",
+        "type": "change",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "image",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "ad683cf3b1c82709"
+            ]
+        ]
+    },
+    {
+        "id": "f1fc41c3.1b5d8",
+        "type": "change",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "annotations",
+                "pt": "msg",
+                "to": "$append([],payload.{\"label\": class, \"bbox\": bbox})",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "image",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 440,
+        "wires": [
+            [
+                "90d9565a.3b5ea8"
+            ]
+        ]
+    },
+    {
+        "id": "63fec0e748def931",
+        "type": "change",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "image",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 320,
+        "wires": [
+            [
+                "0e573484f8a022f9"
+            ]
+        ]
+    },
+    {
+        "id": "0e573484f8a022f9",
+        "type": "link out",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "annotated-image-output",
+        "links": [
+            "847c5db6.44f4e"
+        ],
+        "x": 835,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1827153afc9006bd",
+        "type": "link out",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "annotated-image-output",
+        "links": [
+            "847c5db6.44f4e"
+        ],
+        "x": 945,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f296dabfbb4c3f3b",
+        "type": "inject",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "payload",
+        "payloadType": "msg",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "1491b6df.c56d59"
+            ]
+        ]
+    },
+    {
+        "id": "5de03aea2cdba7aa",
+        "type": "comment",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "CAMERA#1 Detection Processing / MQTT publish to ActiveMQ",
+        "info": "",
+        "x": 270,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "76ddc3c895f2c1a2",
+        "type": "function",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "isObjectDetected",
+        "func": "let personDetected = false;\n\nfor (let object of msg.payload) {\n    if (object.class === 'person') {\n       // node.log(\"info\"+object.class);\n        personDetected = true;\n        break;\n    }\n}\nmsg.topic = personDetected;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 620,
+        "wires": [
+            [
+                "c4c2bbba.d11d18"
+            ]
+        ]
+    },
+    {
+        "id": "fb8ba1ce8185f633",
+        "type": "comment",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "Refresh webcam display with Bounding Box",
+        "info": "",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "c4297cd8dbea3b98",
+        "type": "change",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "msg.capture",
+        "rules": [
+            {
+                "t": "set",
+                "p": "capture",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 180,
+        "wires": [
+            [
+                "800f274b.6632d8"
+            ]
+        ]
+    },
+    {
+        "id": "10fc952c32af47f3",
+        "type": "mqtt out",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "",
+        "topic": "iot/event/camera1/fmt/json",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ac59fe1f.451f3",
+        "x": 1000,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c4c2bbba.d11d18",
+        "type": "switch",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "Person Detected?",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 620,
+        "wires": [
+            [
+                "64a1c9eea8a81648"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "200c4d4d1022a0a1",
+        "type": "debug",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ddad62a457a66aac",
+        "type": "change",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "annotations",
+                "pt": "msg",
+                "to": "$append([],payload.{\"label\": class, \"bbox\": bbox})",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "image",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 680,
+        "wires": [
+            [
+                "e81d84471eea4547"
+            ]
+        ]
+    },
+    {
+        "id": "e81d84471eea4547",
+        "type": "annotate-image",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "",
+        "fill": "",
+        "stroke": "#9363b7",
+        "lineWidth": 5,
+        "fontSize": 24,
+        "fontColor": "#ffC000",
+        "x": 680,
+        "y": 680,
+        "wires": [
+            [
+                "576036d7a8fadc7e"
+            ]
+        ]
+    },
+    {
+        "id": "576036d7a8fadc7e",
+        "type": "mqtt out",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "",
+        "topic": "iot/imgdetection/camera1/fmt/jpeg",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ac59fe1f.451f3",
+        "x": 940,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "8e71bb0b094c4a4f",
+        "type": "function",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "Set Timestamp and #Cam",
+        "func": "var newMsg = msg;\n//newMsg.payload[0].timestamp = new Date().toString();\n//newMsg.payload[0].camera = \"Camera1\";\n//var data1 = [];\nif (newMsg.payload.length === 0) \n{ node.warn(\"Payload is empty!\");\n    return newMsg;\n  }\n   \nnewMsg.payload.forEach(function (row) {\n    //var example = {};\n    row.camera=\"Camera1\";\n   // row.timestamp = new Date().toString();\n   row.timestamp= new Date();\n    row.score=row.score*100;\n    \n    //data1.push(example);\n});\n\n//msg.payload = data1;\n\n//node.warn(newMsg);\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 620,
+        "wires": [
+            [
+                "ddad62a457a66aac",
+                "10fc952c32af47f3"
+            ]
+        ]
+    },
+    {
+        "id": "353686a5dbd50d29",
+        "type": "comment",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "WEBCAM CAMERA #1  Video Processing / Object Detection",
+        "info": "",
+        "x": 260,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "64a1c9eea8a81648",
+        "type": "function",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "Sampling",
+        "func": "\nvar PrevMsgTS = context.get('PrevMsgTS') || \"\";\nif (PrevMsgTS == \"\") {\n    PrevMsgTS = new Date(null);\n} \n\nvar CurrentMsgTS = Date.now();\n\nvar ElapsedTimeMS=CurrentMsgTS - PrevMsgTS;\nif (ElapsedTimeMS <= 10000) {\n    msg.payload = [];\n} else {\n    context.set(\"PrevMsgTS\", CurrentMsgTS );\n}\n//node.warn(\"PrevMsgTS: \" + PrevMsgTS + \" ; CurrentTS: \" + CurrentMsgTS + \"; Elapsed time (s): \" + ElapsedTimeMS/1000 );\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 560,
+        "wires": [
+            [
+                "a36956bbf31db39d"
+            ]
+        ]
+    },
+    {
+        "id": "a36956bbf31db39d",
+        "type": "switch",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "Sampling",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 760,
+        "y": 560,
+        "wires": [
+            [
+                "6046914919d6f24c"
+            ],
+            [
+                "8e71bb0b094c4a4f",
+                "e5e585ee49daf687"
+            ]
+        ]
+    },
+    {
+        "id": "e5e585ee49daf687",
+        "type": "debug",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "6046914919d6f24c",
+        "type": "debug",
+        "z": "ddeb3b89.ad9748",
+        "g": "133487408a363c52",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "ad683cf3b1c82709",
+        "type": "switch",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [],
+            [
+                "8cd39b6c.1e3608"
+            ]
+        ]
+    },
+    {
+        "id": "937d602db7d2c135",
+        "type": "mqtt in",
+        "z": "bdac0d87c40b4bbf",
+        "g": "80abc5d16045e7ca",
+        "name": "",
+        "topic": "iot/imgdetection/+/fmt/jpeg",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ac59fe1f.451f3",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 280,
+        "y": 420,
+        "wires": [
+            [
+                "fe57fbd394860edd",
+                "0dc08d33ed9e52b1",
+                "789a7db3d0f14b74",
+                "a105ee774dd2eed8"
+            ]
+        ]
+    },
+    {
+        "id": "9cd4613972dc679e",
+        "type": "template",
+        "z": "bdac0d87c40b4bbf",
+        "g": "80abc5d16045e7ca",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<img height=\"320px\" src=\"data:image/jpg;base64,{{{payload}}}\">",
+        "output": "str",
+        "x": 700,
+        "y": 420,
+        "wires": [
+            [
+                "74e55c748926830a"
+            ]
+        ]
+    },
+    {
+        "id": "74e55c748926830a",
+        "type": "ui_template",
+        "z": "bdac0d87c40b4bbf",
+        "g": "80abc5d16045e7ca",
+        "group": "1ed33e4c82d4fcac",
+        "name": "",
+        "order": 2,
+        "width": 11,
+        "height": 5,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 860,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe57fbd394860edd",
+        "type": "image viewer",
+        "z": "bdac0d87c40b4bbf",
+        "g": "80abc5d16045e7ca",
+        "name": "",
+        "width": "140",
+        "data": "payload",
+        "dataType": "msg",
+        "active": true,
+        "x": 810,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "529a01e7f9cf75a1",
+        "type": "file",
+        "z": "bdac0d87c40b4bbf",
+        "g": "80abc5d16045e7ca",
+        "name": "Write to IFS",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 570,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0dc08d33ed9e52b1",
+        "type": "change",
+        "z": "bdac0d87c40b4bbf",
+        "g": "80abc5d16045e7ca",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "'/Users/Benoit2/IBMi-webcam.jpeg'",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "529a01e7f9cf75a1"
+            ]
+        ]
+    },
+    {
+        "id": "3c7ed533fa6bcfed",
+        "type": "comment",
+        "z": "bdac0d87c40b4bbf",
+        "g": "80abc5d16045e7ca",
+        "name": "IBM i - Object Detection - Image Dashboard",
+        "info": "",
+        "x": 210,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "789a7db3d0f14b74",
+        "type": "debug",
+        "z": "bdac0d87c40b4bbf",
+        "g": "80abc5d16045e7ca",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a105ee774dd2eed8",
+        "type": "base64",
+        "z": "bdac0d87c40b4bbf",
+        "g": "80abc5d16045e7ca",
+        "name": "",
+        "action": "",
+        "property": "payload",
+        "x": 560,
+        "y": 420,
+        "wires": [
+            [
+                "9cd4613972dc679e"
+            ]
+        ]
+    },
+    {
+        "id": "e8c860f70785270e",
+        "type": "ui_media",
+        "z": "bdac0d87c40b4bbf",
+        "g": "80abc5d16045e7ca",
+        "group": "1ed33e4c82d4fcac",
+        "name": "",
+        "width": 2,
+        "height": 2,
+        "order": 14,
+        "category": "picture",
+        "file": "IBM_i_circle_logo.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 830,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82bd2374ca73c37c",
+        "type": "ui_table",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "group": "1ed33e4c82d4fcac",
+        "name": "",
+        "order": 13,
+        "width": 9,
+        "height": 2,
+        "columns": [
+            {
+                "field": "class",
+                "title": "Object Type",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "score",
+                "title": "Score",
+                "width": "",
+                "align": "left",
+                "formatter": "progress",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "camera",
+                "title": "#WebCAM",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "timestamp",
+                "title": "timestamp",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 510,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bfeef5e667edb402",
+        "type": "mqtt in",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "name": "",
+        "topic": "iot/event/+/fmt/json",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "ac59fe1f.451f3",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "82bd2374ca73c37c",
+                "cd3a7f15bd06b334",
+                "9cccd120d123e2c5"
+            ]
+        ]
+    },
+    {
+        "id": "f26f02f906dc3a67",
+        "type": "comment",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "name": "IBM i - Event Detection Processing / Persistence",
+        "info": "",
+        "x": 260,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "cd3a7f15bd06b334",
+        "type": "debug",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a949ede7d83c5f71",
+        "type": "ODBC query",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "name": "INSERT",
+        "connection": "9ac835691d91a525",
+        "query": "",
+        "parameters": "",
+        "outField": "payload",
+        "x": 520,
+        "y": 200,
+        "wires": [
+            [
+                "8061feb80b8bfedd"
+            ]
+        ]
+    },
+    {
+        "id": "9cccd120d123e2c5",
+        "type": "function",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "name": "Insert Query",
+        "func": "//LETS AGREGATE CLASSES WHEN MULTI OBJECT DETECTION\n// SCORE IS THE LOWEST SCORE DETECTED\n\nvar newMsg = msg;\nvar classy=\"\";\nnewMsg.payload.forEach(function (row) {\n    //var example = {};\n    newMsg.payload.camera = row.camera;\n    //node.warn(\"Camera:\" + row.camera);\n    newMsg.payload.timestamp = row.timestamp;\n    newMsg.payload.score= row.score;\n    if (classy == \"\")\n        classy = row.class ;\n     else\n        classy = classy+\"|\"+row.class ; \n})\nnewMsg.payload.class=classy;\n//node.warn(\"newMsg.payload: \" + newMsg.payload.class);\n\nnewMsg.payload.query=\"INSERT INTO VMSAPP.VMSEVENTS(OBJECTTYPE, DETECTION_SCORE, EVENT_TS, EVENT_SRC) values('\"+\nnewMsg.payload.class+\"','\"+\nnewMsg.payload.score+\"',\"+\n    \"TIMESTAMP_FORMAT('\" + newMsg.payload.timestamp.substr(0, newMsg.payload.timestamp.length-1).replace('T',' ')+\"', 'YYYY-MM-DD HH24:MI:SS.FF3')\"\n+\",'\"+\nnewMsg.payload.camera+\"')\";\n\n//node.warn(\"REQUEST: \" + newMsg.payload.query );\n\nreturn newMsg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "a949ede7d83c5f71"
+            ]
+        ]
+    },
+    {
+        "id": "8061feb80b8bfedd",
+        "type": "debug",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "2615cc32.d5a354",
+        "type": "ui_table",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "group": "1ed33e4c82d4fcac",
+        "name": "DB2 Events",
+        "order": 19,
+        "width": 13,
+        "height": 5,
+        "columns": [
+            {
+                "field": "ID",
+                "title": "Event ID",
+                "width": "15%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "OBJECTTYPE",
+                "title": "Detection",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "DETECTION_SCORE",
+                "title": "Score",
+                "width": "15%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "EVENT_TS",
+                "title": "Time",
+                "width": "25%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "EVENT_SRC",
+                "title": "Source",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 730,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4c9a286215305705",
+        "type": "ODBC query",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "name": "READ_ALL",
+        "connection": "9ac835691d91a525",
+        "query": "SELECT * FROM VMSAPP.VMSEVENTS ORDER BY ID DESC",
+        "parameters": "",
+        "outField": "payload",
+        "x": 490,
+        "y": 260,
+        "wires": [
+            [
+                "2615cc32.d5a354"
+            ]
+        ]
+    },
+    {
+        "id": "a4716315fa8ef6c2",
+        "type": "inject",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "payload",
+        "payloadType": "msg",
+        "x": 240,
+        "y": 260,
+        "wires": [
+            [
+                "4c9a286215305705"
+            ]
+        ]
+    },
+    {
+        "id": "ecd5a070a3d989c4",
+        "type": "ui_text",
+        "z": "bdac0d87c40b4bbf",
+        "g": "7b39fc278818f569",
+        "group": "1ed33e4c82d4fcac",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Event History (Db2 for i) ",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 730,
+        "y": 220,
+        "wires": []
+    }
+]
