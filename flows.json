@@ -1,12 +1,5 @@
 [
     {
-        "id": "a252948d.9913c8",
-        "type": "tab",
-        "label": "Front End Flow",
-        "disabled": true,
-        "info": "This is a demo where I pull data from a Db2 DB, running on AIX. In this case, I have set it up to be able to \"ask\" my data about actors who have played in the Bond Films, with the hope of addressing the Curse of the Bond girls."
-    },
-    {
         "id": "ddeb3b89.ad9748",
         "type": "tab",
         "label": "Webcam-ObjDetection-Dashboard",
