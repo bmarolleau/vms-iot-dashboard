@@ -111,7 +111,9 @@
             "e8c860f70785270e"
         ],
         "x": 14,
-        "y": 319
+        "y": 319,
+        "w": 932,
+        "h": 222
     },
     {
         "id": "7b39fc278818f569",
@@ -140,7 +142,9 @@
             "ecd5a070a3d989c4"
         ],
         "x": 54,
-        "y": 39
+        "y": 39,
+        "w": 812,
+        "h": 262
     },
     {
         "id": "9ac835691d91a525",
@@ -1532,7 +1536,7 @@
         "width": 2,
         "height": 2,
         "order": 14,
-        "category": "picture",
+        "category": "Pictures",
         "file": "IBM_i_circle_logo.png",
         "layout": "adjust",
         "showcontrols": true,
