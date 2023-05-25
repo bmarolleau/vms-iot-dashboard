@@ -1,5 +1,13 @@
 [
     {
+        "id": "c4e80fcc8d1dd9c4",
+        "type": "tab",
+        "label": "PICamera-ObjDetection-Dashboard",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "ddeb3b89.ad9748",
         "type": "tab",
         "label": "Webcam-ObjDetection-Dashboard",
@@ -533,6 +541,725 @@
         "height": 1
     },
     {
+        "id": "1236c2d739abbcc6",
+        "type": "ui_group",
+        "name": "Internal-Camera#2",
+        "tab": "a277a23cf5c22a04",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3acd38737e2fb02d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "a277a23cf5c22a04",
+        "type": "ui_tab",
+        "name": "PI-Camera-UI",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9565cd66ae2957e0",
+        "type": "comment",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "Camera2 - Trigger camera when remote button pushed.",
+        "info": "If the motion sensor attached to the GPIO pins of the Raspberry Pi detects motion, the output will be 1. The switch node will trigger the camera if its input is 1.",
+        "x": 220,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0a3690cdfb1d8e0c",
+        "type": "camerapi-takephoto",
+        "z": "c4e80fcc8d1dd9c4",
+        "filemode": "1",
+        "filename": "image01.jpg",
+        "filedefpath": "1",
+        "filepath": "",
+        "fileformat": "jpeg",
+        "resolution": "1",
+        "rotation": "0",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "50",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "80",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "0",
+        "agcwait": "1.0",
+        "led": "0",
+        "awb": "auto",
+        "name": "",
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "79d3bd017194c0fb"
+            ]
+        ]
+    },
+    {
+        "id": "66b5b1570d8ee079",
+        "type": "base64",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "action": "str",
+        "property": "payload",
+        "x": 900,
+        "y": 280,
+        "wires": [
+            [
+                "f20dde527590f733",
+                "92101a8b2fadf206"
+            ]
+        ]
+    },
+    {
+        "id": "973970bca6caa34c",
+        "type": "ui_button",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "group": "1236c2d739abbcc6",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Take Photo",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-camera-retro",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "789b2dca8e922a97"
+            ]
+        ]
+    },
+    {
+        "id": "2a21fa3adcd77233",
+        "type": "file in",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "FileName to Buffer",
+        "filename": "/home/pi/Pictures/image01.jpg",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 730,
+        "y": 280,
+        "wires": [
+            [
+                "66b5b1570d8ee079"
+            ]
+        ]
+    },
+    {
+        "id": "3937484b9ca59686",
+        "type": "change",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append([],payload.{\"class\":class,\"score\":score*100,\"bbox\":bbox})",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 200,
+        "wires": [
+            [
+                "26afa40afa3a857a"
+            ]
+        ]
+    },
+    {
+        "id": "26afa40afa3a857a",
+        "type": "ui_table",
+        "z": "c4e80fcc8d1dd9c4",
+        "group": "1236c2d739abbcc6",
+        "name": "",
+        "order": 3,
+        "width": 6,
+        "height": 3,
+        "columns": [
+            {
+                "field": "class",
+                "title": "Object Type",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "score",
+                "title": "Score",
+                "width": "",
+                "align": "left",
+                "formatter": "progress",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 1030,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79d3bd017194c0fb",
+        "type": "tfjs-object-detection",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "modelUrl": "",
+        "x": 640,
+        "y": 200,
+        "wires": [
+            [
+                "3937484b9ca59686",
+                "2a21fa3adcd77233",
+                "d61f361e80564f4f",
+                "af8789c0600fd09b"
+            ]
+        ]
+    },
+    {
+        "id": "789b2dca8e922a97",
+        "type": "mqtt out",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "topic": "myapp/control/take_photoCamera1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "3acd38737e2fb02d",
+        "x": 360,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1f48e103fa7afbf6",
+        "type": "mqtt in",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "topic": "myapp/control/take_photoCamera1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "3acd38737e2fb02d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "0a3690cdfb1d8e0c"
+            ]
+        ]
+    },
+    {
+        "id": "d772c86badfa6f04",
+        "type": "comment",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "Camera2- MQTT Command : Take Picture",
+        "info": "",
+        "x": 220,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f20dde527590f733",
+        "type": "template",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<img height=\"320px\" src=\"data:image/jpg;base64,{{{payload}}}\">",
+        "output": "str",
+        "x": 1040,
+        "y": 280,
+        "wires": [
+            [
+                "ee099a3c51536031"
+            ]
+        ]
+    },
+    {
+        "id": "ee099a3c51536031",
+        "type": "ui_template",
+        "z": "c4e80fcc8d1dd9c4",
+        "group": "1236c2d739abbcc6",
+        "name": "",
+        "order": 1,
+        "width": 6,
+        "height": 7,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1180,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92101a8b2fadf206",
+        "type": "image viewer",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "width": "140",
+        "data": "payload",
+        "dataType": "msg",
+        "active": false,
+        "x": 1050,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a1277f83bbfed56",
+        "type": "comment",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "Camera2- Object Detection class in UI Table&Image",
+        "info": "",
+        "x": 990,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a4dcce37e7b0514a",
+        "type": "comment",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "tfjs custom coco-ssd node ",
+        "info": "- works with Node 10.24.1 (deprecated) /nodered3 on pi\n- tfjs not supported on pi / arm\n- source to build install the node:\nhttps://developer.ibm.com/tutorials/building-a-machine-learning-node-for-node-red-using-tensorflowjs/",
+        "x": 610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "39b2cda81d6563b7",
+        "type": "file in",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 480,
+        "y": 340,
+        "wires": [
+            [
+                "b7b397337dc92a30"
+            ]
+        ]
+    },
+    {
+        "id": "d61f361e80564f4f",
+        "type": "function",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "function 1",
+        "func": "msg.filename= msg.filepath+msg.filename;\nnode.warn(msg.filename);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 340,
+        "wires": [
+            [
+                "b6522afeb31e0df2"
+            ]
+        ]
+    },
+    {
+        "id": "af8789c0600fd09b",
+        "type": "debug",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b6522afeb31e0df2",
+        "type": "change",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payloadtf",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "39b2cda81d6563b7"
+            ]
+        ]
+    },
+    {
+        "id": "dc13a9952a063290",
+        "type": "inject",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "0a3690cdfb1d8e0c"
+            ]
+        ]
+    },
+    {
+        "id": "a563380237831e61",
+        "type": "mqtt out",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "topic": "iot/event/camera2/fmt/json",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ac59fe1f.451f3",
+        "x": 980,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "5baa1dc94137b82d",
+        "type": "switch",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "Person Detected?",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 410,
+        "y": 400,
+        "wires": [
+            [
+                "91e39cade66e6a81"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f920ec87a9fba7e3",
+        "type": "change",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "annotations",
+                "pt": "msg",
+                "to": "$append([],payload.{\"label\": class, \"bbox\": bbox})",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "image",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "c3835cd2a11f331f"
+            ]
+        ]
+    },
+    {
+        "id": "dc247c666762cb09",
+        "type": "mqtt out",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "topic": "iot/imgdetection/camera2/fmt/jpeg",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ac59fe1f.451f3",
+        "x": 860,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "5d303020a491db9a",
+        "type": "function",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "Set Timestamp and #Cam",
+        "func": "var newMsg = msg;\n//newMsg.payload[0].timestamp = new Date().toString();\n//newMsg.payload[0].camera = \"Camera1\";\n//var data1 = [];\nif (newMsg.payload.length === 0) \n{ node.warn(\"Payloadtf is empty!\");\n    return newMsg;\n  }\n   \nnewMsg.payload.forEach(function (row) {\n    //var example = {};\n    row.camera=\"Camera2\";\n   // row.timestamp = new Date().toString();\n   row.timestamp= new Date();\n    row.score=row.score*100;\n    \n    //data1.push(example);\n});\n\n//msg.payload = data1;\n\n//node.warn(newMsg);\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 400,
+        "wires": [
+            [
+                "a563380237831e61"
+            ]
+        ]
+    },
+    {
+        "id": "945485a03513a0ad",
+        "type": "comment",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "Camera#2 Detection Processing / MQTT publish to ActiveMQ",
+        "info": "",
+        "x": 260,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "5f36eee372809045",
+        "type": "function",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "isObjectDetected",
+        "func": "let personDetected = false;\n\nfor (let object of msg.payload) {\n    if (object.class === 'person') {\n       // node.log(\"info\"+object.class);\n        personDetected = true;\n        break;\n    }\n}\nmsg.topic = personDetected;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 400,
+        "wires": [
+            [
+                "5baa1dc94137b82d"
+            ]
+        ]
+    },
+    {
+        "id": "91e39cade66e6a81",
+        "type": "function",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "Sampling",
+        "func": "\nvar PrevMsgTS = context.get('PrevMsgTS') || \"\";\nif (PrevMsgTS == \"\") {\n    PrevMsgTS = new Date(null);\n} \n\nvar CurrentMsgTS = Date.now();\n\nvar ElapsedTimeMS=CurrentMsgTS - PrevMsgTS;\nif (ElapsedTimeMS <= 10000) {\n    msg.payload = [];\n} else {\n    context.set(\"PrevMsgTS\", CurrentMsgTS );\n}\n//node.warn(\"PrevMsgTS: \" + PrevMsgTS + \" ; CurrentTS: \" + CurrentMsgTS + \"; Elapsed time (s): \" + ElapsedTimeMS/1000 );\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 400,
+        "wires": [
+            [
+                "433e6d1b3e70b6c5"
+            ]
+        ]
+    },
+    {
+        "id": "433e6d1b3e70b6c5",
+        "type": "switch",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "Sampling",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 720,
+        "y": 400,
+        "wires": [
+            [],
+            [
+                "f920ec87a9fba7e3",
+                "5d303020a491db9a"
+            ]
+        ]
+    },
+    {
+        "id": "c3835cd2a11f331f",
+        "type": "annotate-image",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "fill": "",
+        "stroke": "#9363b7",
+        "lineWidth": 5,
+        "fontSize": 24,
+        "fontColor": "#ffC000",
+        "x": 600,
+        "y": 500,
+        "wires": [
+            [
+                "dc247c666762cb09"
+            ]
+        ]
+    },
+    {
+        "id": "b7b397337dc92a30",
+        "type": "change",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "image",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payloadtf",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 340,
+        "wires": [
+            [
+                "5f36eee372809045"
+            ]
+        ]
+    },
+    {
+        "id": "1a26d4583bcd7aa0",
+        "type": "comment",
+        "z": "c4e80fcc8d1dd9c4",
+        "name": "Flow for Rapsberry PI only: internal camera module",
+        "info": "",
+        "x": 530,
+        "y": 20,
+        "wires": []
+    },
+    {
         "id": "800f274b.6632d8",
         "type": "ui_webcam",
         "z": "ddeb3b89.ad9748",
@@ -735,14 +1462,15 @@
         "z": "ddeb3b89.ad9748",
         "g": "221173cd0f9456d8",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 670,
+        "x": 650,
         "y": 280,
         "wires": []
     },
@@ -1650,7 +2378,7 @@
         "z": "bdac0d87c40b4bbf",
         "g": "7b39fc278818f569",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1696,7 +2424,8 @@
         "y": 200,
         "wires": [
             [
-                "a949ede7d83c5f71"
+                "a949ede7d83c5f71",
+                "cd3a7f15bd06b334"
             ]
         ]
     },
@@ -1706,7 +2435,7 @@
         "z": "bdac0d87c40b4bbf",
         "g": "7b39fc278818f569",
         "name": "debug 5",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1780,11 +2509,15 @@
                 }
             }
         ],
-        "outputs": 0,
-        "cts": false,
+        "outputs": 1,
+        "cts": true,
         "x": 730,
         "y": 260,
-        "wires": []
+        "wires": [
+            [
+                "4c9a286215305705"
+            ]
+        ]
     },
     {
         "id": "4c9a286215305705",
