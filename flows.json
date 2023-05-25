@@ -111,9 +111,7 @@
             "e8c860f70785270e"
         ],
         "x": 14,
-        "y": 319,
-        "w": 932,
-        "h": 222
+        "y": 319
     },
     {
         "id": "7b39fc278818f569",
@@ -142,9 +140,7 @@
             "ecd5a070a3d989c4"
         ],
         "x": 54,
-        "y": 39,
-        "w": 812,
-        "h": 262
+        "y": 39
     },
     {
         "id": "9ac835691d91a525",
@@ -271,14 +267,6 @@
         "className": ""
     },
     {
-        "id": "a2e8d5347a3fab8b",
-        "type": "ui_tab",
-        "name": "IBMiApp",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "1ed33e4c82d4fcac",
         "type": "ui_group",
         "name": "IBM i ",
@@ -316,21 +304,6 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
-    },
-    {
-        "id": "d4ea9ce21fb788dd",
-        "type": "ui_tab",
-        "name": "IoT sensor",
-        "icon": "dashboard",
-        "order": 3
-    },
-    {
-        "id": "35d4ee9e.dac3fa",
-        "type": "ui_tab",
-        "name": "Customer Relationship Management - IBM i + Machine Learning Driverless AI MOJO Scoring Pipeline",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "53b4eb195de2d526",
@@ -533,25 +506,16 @@
         "height": 1
     },
     {
-        "id": "1236c2d739abbcc6",
-        "type": "ui_group",
-        "name": "Internal-Camera#2",
-        "tab": "a277a23cf5c22a04",
-        "order": 5,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "3acd38737e2fb02d",
         "type": "mqtt-broker",
         "name": "",
         "broker": "test.mosquitto.org",
         "port": "1883",
         "clientid": "",
+        "autoConnect": true,
         "usetls": false,
         "compatmode": false,
+        "protocolVersion": 4,
         "keepalive": "60",
         "cleansession": true,
         "birthTopic": "",
@@ -656,7 +620,7 @@
         "overwriteFile": "false",
         "encoding": "none",
         "x": 840,
-        "y": 200,
+        "y": 180,
         "wires": [
             []
         ]
