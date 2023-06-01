@@ -141,8 +141,8 @@
             "a4716315fa8ef6c2",
             "ecd5a070a3d989c4"
         ],
-        "x": 54,
-        "y": 39,
+        "x": 34,
+        "y": -1,
         "w": 812,
         "h": 262
     },
@@ -277,7 +277,7 @@
         "tab": "5967b7da.b44598",
         "order": 3,
         "disp": true,
-        "width": "13",
+        "width": 16,
         "collapse": false,
         "className": ""
     },
@@ -310,206 +310,6 @@
         "sessionExpiry": ""
     },
     {
-        "id": "53b4eb195de2d526",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "5ecf1e5d.c16c4",
-        "order": 3,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "53866cc371f63840",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "5ecf1e5d.c16c4",
-        "order": 5,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "08cbf857616a51fa",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "5ecf1e5d.c16c4",
-        "order": 6,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "22f5e7d25cdea6f4",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "5ecf1e5d.c16c4",
-        "order": 8,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "5af32e4176bd0ae2",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "5ecf1e5d.c16c4",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "7f81193947322281",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "5ecf1e5d.c16c4",
-        "order": 10,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "75f722612f7e0c79",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "3bfd37acbe314783",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 3,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "9c7b4d520b66d23e",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "ebdbb49c71fd173d",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "82b7bc470bfdab98",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 6,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "9e4fa8a0f183a619",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "3e1d9b5e273edbb6",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 8,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "525beed2e3dbea6f",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "2410ca6f4d4f26fb",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 10,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "5ec2337962f30c8a",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "a74c97aa2e76f45d",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 12,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "6caa532bde5b9b93",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 15,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "ef58b8f8f8fbb7a6",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 16,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "6be0f866c03b2535",
-        "type": "ui_spacer",
-        "z": "ddeb3b89.ad9748",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 17,
-        "width": 1,
-        "height": 1
-    },
-    {
         "id": "3acd38737e2fb02d",
         "type": "mqtt-broker",
         "name": "",
@@ -540,6 +340,216 @@
         "order": 3,
         "disabled": false,
         "hidden": false
+    },
+    {
+        "id": "8f5b42678cd4fd13",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b2b73b567b0987fa",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4f57854012e9bdc6",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d1fd75285560d991",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "58fe2cb2d73f10af",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8f3c651faf7ebec5",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "86d64116fdd08db3",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e20ddd487010dbac",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "fcb348dd08d4655c",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6e0bc77ebfd6a671",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 5,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "62d479e142771415",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a4c146dfe81d4911",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "dfc7f651abdb0309",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3b76c3b8ebe80ff1",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d1a7ab6672b40822",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4ff25de7694c2916",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "6526e5cc4d692f1f",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b7d899eb2e0e4e3f",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 15,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e888a590924fba26",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9fdc9d004a2dcd97",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 17,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "5386dc3a13c17b2c",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 20,
+        "width": 2,
+        "height": 1
     },
     {
         "id": "800f274b.6632d8",
@@ -1614,8 +1624,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 530,
-        "y": 140,
+        "x": 510,
+        "y": 100,
         "wires": [
             []
         ]
@@ -1633,8 +1643,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 230,
-        "y": 140,
+        "x": 210,
+        "y": 100,
         "wires": [
             [
                 "82bd2374ca73c37c",
@@ -1650,8 +1660,8 @@
         "g": "7b39fc278818f569",
         "name": "IBM i - Event Detection Processing / Persistence",
         "info": "",
-        "x": 260,
-        "y": 80,
+        "x": 240,
+        "y": 40,
         "wires": []
     },
     {
@@ -1668,8 +1678,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 80,
+        "x": 570,
+        "y": 40,
         "wires": []
     },
     {
@@ -1683,11 +1693,9 @@
         "parameters": "",
         "outField": "payload",
         "x": 520,
-        "y": 200,
+        "y": 160,
         "wires": [
-            [
-                "8061feb80b8bfedd"
-            ]
+            []
         ]
     },
     {
@@ -1696,14 +1704,14 @@
         "z": "bdac0d87c40b4bbf",
         "g": "7b39fc278818f569",
         "name": "Insert Query",
-        "func": "//LETS AGREGATE CLASSES WHEN MULTI OBJECT DETECTION\n// SCORE IS THE LOWEST SCORE DETECTED\n\nvar newMsg = msg;\nvar classy=\"\";\nnewMsg.payload.forEach(function (row) {\n    //var example = {};\n    newMsg.payload.camera = row.camera;\n    //node.warn(\"Camera:\" + row.camera);\n    newMsg.payload.timestamp = row.timestamp;\n    newMsg.payload.score= row.score;\n    if (classy == \"\")\n        classy = row.class ;\n     else\n        classy = classy+\"|\"+row.class ; \n})\nnewMsg.payload.class=classy;\n//node.warn(\"newMsg.payload: \" + newMsg.payload.class);\n\nnewMsg.payload.query=\"INSERT INTO VMSAPP.VMSEVENTS(OBJECTTYPE, DETECTION_SCORE, EVENT_TS, EVENT_SRC) values('\"+\nnewMsg.payload.class+\"','\"+\nnewMsg.payload.score+\"',\"+\n    \"TIMESTAMP_FORMAT('\" + newMsg.payload.timestamp.substr(0, newMsg.payload.timestamp.length-1).replace('T',' ')+\"', 'YYYY-MM-DD HH24:MI:SS.FF3')\"\n+\",'\"+\nnewMsg.payload.camera+\"')\";\n\n//node.warn(\"REQUEST: \" + newMsg.payload.query );\n\nreturn newMsg;\n\n",
+        "func": "//LETS AGREGATE CLASSES WHEN MULTI OBJECT DETECTION\n// SCORE IS THE LOWEST SCORE DETECTED\n\nvar newMsg = msg;\nvar classy=\"\";\nnewMsg.payload.forEach(function (row) {\n    //var example = {};\n    newMsg.payload.camera = row.camera;\n    //node.warn(\"Camera:\" + row.camera);\n    newMsg.payload.timestamp = row.timestamp;\n    newMsg.payload.score= row.score;\n    if (classy == \"\")\n        classy = row.class ;\n     else\n        classy = classy+\"|\"+row.class ; \n})\nnewMsg.payload.class=classy;\n//node.warn(\"newMsg.payload: \" + newMsg.payload.class);\n\nnewMsg.payload.query=\"INSERT INTO VMSAPP.VMSEVENTS(OBJECTTYPE, DETECTION_SCORE, EVENT_TS, EVENT_SRC) values('\"+\nnewMsg.payload.class+\"','\"+\nnewMsg.payload.score+\"',\"+\n    \"TIMESTAMP_FORMAT('\" + newMsg.payload.timestamp.substr(0, newMsg.payload.timestamp.length-1).replace('T',' ')+\"', 'YYYY-MM-DD HH24:MI:SS.FF3')\"\n+\",'\"+\n    newMsg.payload.camera +\"')\";\n\nnode.warn(\"REQUEST: \" + newMsg.payload.query );\n\nreturn newMsg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 200,
+        "x": 350,
+        "y": 160,
         "wires": [
             [
                 "a949ede7d83c5f71",
@@ -1725,8 +1733,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 180,
+        "x": 720,
+        "y": 120,
         "wires": []
     },
     {
@@ -1737,13 +1745,13 @@
         "group": "1ed33e4c82d4fcac",
         "name": "DB2 Events",
         "order": 19,
-        "width": 13,
-        "height": 5,
+        "width": "15",
+        "height": 1,
         "columns": [
             {
                 "field": "ID",
                 "title": "Event ID",
-                "width": "15%",
+                "width": "12%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1753,7 +1761,7 @@
             {
                 "field": "OBJECTTYPE",
                 "title": "Detection",
-                "width": "20%",
+                "width": "15%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1763,7 +1771,7 @@
             {
                 "field": "DETECTION_SCORE",
                 "title": "Score",
-                "width": "15%",
+                "width": "10%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1773,7 +1781,7 @@
             {
                 "field": "EVENT_TS",
                 "title": "Time",
-                "width": "25%",
+                "width": "18%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1783,6 +1791,26 @@
             {
                 "field": "EVENT_SRC",
                 "title": "Source",
+                "width": "13%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "EVENT_LOCATION",
+                "title": "Location",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "DISTANCE_M",
+                "title": "Distance (m)",
                 "width": "20%",
                 "align": "left",
                 "formatter": "plaintext",
@@ -1793,8 +1821,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 730,
-        "y": 260,
+        "x": 710,
+        "y": 220,
         "wires": [
             [
                 "4c9a286215305705"
@@ -1808,11 +1836,11 @@
         "g": "7b39fc278818f569",
         "name": "READ_ALL",
         "connection": "9ac835691d91a525",
-        "query": "SELECT * FROM VMSAPP.VMSEVENTS ORDER BY ID DESC",
+        "query": "SELECT EVT.ID, OBJECTTYPE, DETECTION_SCORE, EVENT_TS, EVENT_SRC, QSYS2.ST_ASTEXT(SENSOR_LOCATION) AS EVENT_LOCATION, \n       QSYS2.ST_ASTEXT(CURRENT_LOCATION) AS REF_LOCATION, ROUND((QSYS2.ST_DISTANCE(CURRENT_LOCATION, SENSOR_LOCATION)),0) AS DISTANCE_M \nFROM VMSAPP.VMSEVENTS EVT,VMSAPP.SENSORS SNS, VMSAPP.REFERENCE_LOCATIONS \nWHERE EVT.EVENT_SRC = SNS.NAME AND SNS.NAME like 'Camera1'  \nORDER BY EVT.ID DESC",
         "parameters": "",
         "outField": "payload",
-        "x": 490,
-        "y": 260,
+        "x": 450,
+        "y": 220,
         "wires": [
             [
                 "2615cc32.d5a354"
@@ -1837,8 +1865,8 @@
         "topic": "",
         "payload": "payload",
         "payloadType": "msg",
-        "x": 240,
-        "y": 260,
+        "x": 160,
+        "y": 220,
         "wires": [
             [
                 "4c9a286215305705"
@@ -1859,8 +1887,8 @@
         "format": "",
         "layout": "row-spread",
         "className": "",
-        "x": 730,
-        "y": 220,
+        "x": 710,
+        "y": 180,
         "wires": []
     }
 ]
