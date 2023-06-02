@@ -142,7 +142,7 @@
             "ecd5a070a3d989c4"
         ],
         "x": 34,
-        "y": -1,
+        "y": 19,
         "w": 812,
         "h": 262
     },
@@ -734,7 +734,7 @@
         "g": "221173cd0f9456d8",
         "name": "",
         "modelUrl": "http://localhost:1880/coco/model.json",
-        "scoreThreshold": 0.5,
+        "scoreThreshold": "0.3",
         "passthru": "bbox",
         "lineColour": "red",
         "x": 410,
@@ -1004,7 +1004,7 @@
                 "p": "payload"
             }
         ],
-        "repeat": "10",
+        "repeat": "5",
         "crontab": "",
         "once": true,
         "onceDelay": "10",
@@ -1625,7 +1625,7 @@
         "outputs": 1,
         "cts": true,
         "x": 510,
-        "y": 100,
+        "y": 120,
         "wires": [
             []
         ]
@@ -1644,7 +1644,7 @@
         "rap": false,
         "inputs": 0,
         "x": 210,
-        "y": 100,
+        "y": 120,
         "wires": [
             [
                 "82bd2374ca73c37c",
@@ -1661,7 +1661,7 @@
         "name": "IBM i - Event Detection Processing / Persistence",
         "info": "",
         "x": 240,
-        "y": 40,
+        "y": 60,
         "wires": []
     },
     {
@@ -1679,7 +1679,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 570,
-        "y": 40,
+        "y": 60,
         "wires": []
     },
     {
@@ -1693,7 +1693,7 @@
         "parameters": "",
         "outField": "payload",
         "x": 520,
-        "y": 160,
+        "y": 180,
         "wires": [
             []
         ]
@@ -1711,7 +1711,7 @@
         "finalize": "",
         "libs": [],
         "x": 350,
-        "y": 160,
+        "y": 180,
         "wires": [
             [
                 "a949ede7d83c5f71",
@@ -1734,7 +1734,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 720,
-        "y": 120,
+        "y": 140,
         "wires": []
     },
     {
@@ -1822,7 +1822,7 @@
         "outputs": 1,
         "cts": true,
         "x": 710,
-        "y": 220,
+        "y": 240,
         "wires": [
             [
                 "4c9a286215305705"
@@ -1840,7 +1840,7 @@
         "parameters": "",
         "outField": "payload",
         "x": 450,
-        "y": 220,
+        "y": 240,
         "wires": [
             [
                 "2615cc32.d5a354"
@@ -1866,7 +1866,7 @@
         "payload": "payload",
         "payloadType": "msg",
         "x": 160,
-        "y": 220,
+        "y": 240,
         "wires": [
             [
                 "4c9a286215305705"
@@ -1888,7 +1888,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 710,
-        "y": 180,
+        "y": 200,
         "wires": []
     }
 ]
