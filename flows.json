@@ -37,7 +37,9 @@
             "6046914919d6f24c"
         ],
         "x": 14,
-        "y": 499
+        "y": 499,
+        "w": 1132,
+        "h": 222
     },
     {
         "id": "221173cd0f9456d8",
@@ -79,7 +81,9 @@
             "ad683cf3b1c82709"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 972,
+        "h": 462
     },
     {
         "id": "80abc5d16045e7ca",
@@ -1444,7 +1448,7 @@
         "width": "140",
         "data": "payload",
         "dataType": "msg",
-        "active": true,
+        "active": false,
         "x": 810,
         "y": 480,
         "wires": [
@@ -1623,7 +1627,9 @@
         "x": 510,
         "y": 120,
         "wires": [
-            []
+            [
+                "4c9a286215305705"
+            ]
         ]
     },
     {
@@ -1830,7 +1836,7 @@
         "g": "7b39fc278818f569",
         "name": "READ_ALL",
         "connection": "9ac835691d91a525",
-        "query": "SELECT EVT.ID, OBJECTTYPE, DETECTION_SCORE, EVENT_TS, EVENT_SRC, QSYS2.ST_ASTEXT(SENSOR_LOCATION) AS EVENT_LOCATION, \n       QSYS2.ST_ASTEXT(CURRENT_LOCATION) AS REF_LOCATION, ROUND((QSYS2.ST_DISTANCE(CURRENT_LOCATION, SENSOR_LOCATION)),0) AS DISTANCE_M \nFROM VMSAPP.VMSEVENTS EVT,VMSAPP.SENSORS SNS, VMSAPP.REFERENCE_LOCATIONS \nWHERE EVT.EVENT_SRC = SNS.NAME  \nORDER BY EVT.ID DESC",
+        "query": "SELECT EVT.ID, OBJECTTYPE, DETECTION_SCORE, EVENT_TS, EVENT_SRC, QSYS2.ST_ASTEXT(SENSOR_LOCATION) AS EVENT_LOCATION, \n       QSYS2.ST_ASTEXT(CURRENT_LOCATION) AS REF_LOCATION, ROUND((QSYS2.ST_DISTANCE(CURRENT_LOCATION, SENSOR_LOCATION)),0) AS DISTANCE_M \nFROM VMSAPP.VMSEVENTS EVT,VMSAPP.SENSORS SNS, VMSAPP.REFERENCE_LOCATIONS \nWHERE EVT.EVENT_SRC = SNS.NAME  \nORDER BY EVT.ID DESC\nFETCH FIRST 30 ROWS ONLY",
         "parameters": "",
         "outField": "payload",
         "x": 450,
@@ -1852,10 +1858,10 @@
                 "p": "payload"
             }
         ],
-        "repeat": "10",
+        "repeat": "15",
         "crontab": "",
         "once": true,
-        "onceDelay": "10",
+        "onceDelay": "20",
         "topic": "",
         "payload": "payload",
         "payloadType": "msg",
