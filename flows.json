@@ -734,7 +734,7 @@
         "g": "221173cd0f9456d8",
         "name": "",
         "modelUrl": "http://localhost:1880/coco/model.json",
-        "scoreThreshold": "0.3",
+        "scoreThreshold": "0.5",
         "passthru": "bbox",
         "lineColour": "red",
         "x": 410,
@@ -1004,7 +1004,7 @@
                 "p": "payload"
             }
         ],
-        "repeat": "5",
+        "repeat": "10",
         "crontab": "",
         "once": true,
         "onceDelay": "10",
@@ -1858,10 +1858,10 @@
                 "p": "payload"
             }
         ],
-        "repeat": "5",
+        "repeat": "20",
         "crontab": "",
         "once": true,
-        "onceDelay": "5",
+        "onceDelay": "10",
         "topic": "",
         "payload": "payload",
         "payloadType": "msg",
