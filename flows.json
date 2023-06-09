@@ -2,9 +2,17 @@
     {
         "id": "ddeb3b89.ad9748",
         "type": "tab",
-        "label": "Webcam-ObjDetection-Dashboard",
+        "label": "CAM1-Webcam-ObjDetection-Dashboard",
         "disabled": false,
         "info": ""
+    },
+    {
+        "id": "e351b1251dfbc2f7",
+        "type": "tab",
+        "label": "Room1-SensorHUB",
+        "disabled": false,
+        "info": "",
+        "env": []
     },
     {
         "id": "bdac0d87c40b4bbf",
@@ -13,6 +21,13 @@
         "disabled": false,
         "info": "",
         "env": []
+    },
+    {
+        "id": "dd44b582.841dd",
+        "type": "tab",
+        "label": "EX1",
+        "disabled": true,
+        "info": ""
     },
     {
         "id": "133487408a363c52",
@@ -78,12 +93,13 @@
             "c4297cd8dbea3b98",
             "200c4d4d1022a0a1",
             "353686a5dbd50d29",
-            "ad683cf3b1c82709"
+            "ad683cf3b1c82709",
+            "1e40d86f201d0e33"
         ],
         "x": 14,
-        "y": 19,
+        "y": -1,
         "w": 972,
-        "h": 462
+        "h": 482
     },
     {
         "id": "80abc5d16045e7ca",
@@ -155,7 +171,7 @@
         "id": "95389422.0480c8",
         "type": "ui_base",
         "theme": {
-            "name": "theme-dark",
+            "name": "theme-custom",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#305def",
@@ -173,18 +189,18 @@
             "customTheme": {
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
-                "baseColor": "#245eb9",
+                "baseColor": "#3e6fda",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
                 "reset": false
             },
             "themeState": {
                 "base-color": {
-                    "default": "#097479",
-                    "value": "#3077ce",
+                    "default": "#245eb9",
+                    "value": "#3e6fda",
                     "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#3077ce",
+                    "value": "#3e6fda",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -192,11 +208,11 @@
                     "edited": true
                 },
                 "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#6da0dd",
+                    "value": "#7e9fe6",
                     "edited": false
                 },
                 "group-borderColor": {
@@ -204,7 +220,7 @@
                     "edited": true
                 },
                 "group-backgroundColor": {
-                    "value": "#333333",
+                    "value": "#000000",
                     "edited": true
                 },
                 "widget-textColor": {
@@ -212,12 +228,12 @@
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#3077ce",
+                    "value": "#245eb9",
                     "edited": true
                 },
                 "widget-borderColor": {
-                    "value": "#333333",
-                    "edited": false
+                    "value": "#000000",
+                    "edited": true
                 },
                 "base-font": {
                     "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
@@ -273,11 +289,11 @@
     {
         "id": "1ed33e4c82d4fcac",
         "type": "ui_group",
-        "name": "IBM i ",
+        "name": "IBM i - Event Detection Hub (ActiveMQ)",
         "tab": "5967b7da.b44598",
-        "order": 3,
+        "order": 2,
         "disp": true,
-        "width": 16,
+        "width": "16",
         "collapse": false,
         "className": ""
     },
@@ -333,76 +349,198 @@
         "willPayload": ""
     },
     {
-        "id": "a277a23cf5c22a04",
-        "type": "ui_tab",
-        "name": "PI-Camera-UI",
-        "icon": "dashboard",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
+        "id": "a54677be.62b79",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "632f71ef.c9a91",
+        "order": 8,
+        "disp": true,
+        "width": "11",
+        "collapse": false
     },
     {
-        "id": "8f5b42678cd4fd13",
-        "type": "ui_spacer",
-        "z": "bdac0d87c40b4bbf",
-        "name": "spacer",
-        "group": "5ecf1e5d.c16c4",
-        "order": 3,
-        "width": 2,
-        "height": 1
+        "id": "4c2982c.15e91fc",
+        "type": "ui_group",
+        "name": "Humidity",
+        "tab": "632f71ef.c9a91",
+        "order": 6,
+        "disp": true,
+        "width": "11",
+        "collapse": false
     },
     {
-        "id": "b2b73b567b0987fa",
-        "type": "ui_spacer",
-        "z": "bdac0d87c40b4bbf",
-        "name": "spacer",
-        "group": "5ecf1e5d.c16c4",
+        "id": "80fcf2f5.7dc2c",
+        "type": "ui_group",
+        "name": "Chart",
+        "tab": "632f71ef.c9a91",
+        "order": 7,
+        "disp": true,
+        "width": "33",
+        "collapse": false
+    },
+    {
+        "id": "6bc9a9f0.9ccf58",
+        "type": "ui_group",
+        "name": "Object Temperature",
+        "tab": "632f71ef.c9a91",
         "order": 5,
+        "disp": true,
+        "width": "11",
+        "collapse": false
+    },
+    {
+        "id": "632f71ef.c9a91",
+        "type": "ui_tab",
+        "name": "IoT sensor",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "ba1ff527abfa5261",
+        "type": "ui_group",
+        "name": "IBM i - Sensor Data (ActiveMQ)",
+        "tab": "5967b7da.b44598",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f6052a3dccc77ea3",
+        "type": "ui_group",
+        "name": "Machine 2",
+        "tab": "632f71ef.c9a91",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1e4a72d62ed7564c",
+        "type": "ui_group",
+        "name": "Machine 3",
+        "tab": "632f71ef.c9a91",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fcc4481a9e329266",
+        "type": "ui_group",
+        "name": "Machine 4",
+        "tab": "632f71ef.c9a91",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "64954f1c27064573",
+        "type": "ui_spacer",
+        "z": "dd44b582.841dd",
+        "name": "spacer",
+        "group": "80fcf2f5.7dc2c",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "f8f73605d1233c67",
+        "type": "ui_spacer",
+        "z": "dd44b582.841dd",
+        "name": "spacer",
+        "group": "80fcf2f5.7dc2c",
+        "order": 3,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "b967e357cd8aafb0",
+        "type": "ui_spacer",
+        "z": "dd44b582.841dd",
+        "name": "spacer",
+        "group": "80fcf2f5.7dc2c",
+        "order": 4,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "795ce21d3e17cf3a",
+        "type": "ui_spacer",
+        "z": "dd44b582.841dd",
+        "name": "spacer",
+        "group": "80fcf2f5.7dc2c",
+        "order": 5,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "b7a2466ccdded916",
+        "type": "ui_spacer",
+        "z": "dd44b582.841dd",
+        "name": "spacer",
+        "group": "80fcf2f5.7dc2c",
+        "order": 6,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "984f18e9077215e0",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 3,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "497b9910ece3cfe1",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "5ecf1e5d.c16c4",
+        "order": 4,
         "width": 2,
         "height": 1
     },
     {
-        "id": "4f57854012e9bdc6",
+        "id": "a1c84e741591b336",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
         "group": "5ecf1e5d.c16c4",
         "order": 6,
-        "width": 1,
+        "width": 5,
         "height": 1
     },
     {
-        "id": "d1fd75285560d991",
+        "id": "42f0406ee83f7846",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
         "group": "5ecf1e5d.c16c4",
         "order": 8,
-        "width": 2,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "58fe2cb2d73f10af",
+        "id": "7549c33506ff8482",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
         "group": "5ecf1e5d.c16c4",
         "order": 9,
-        "width": 1,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "8f3c651faf7ebec5",
-        "type": "ui_spacer",
-        "z": "bdac0d87c40b4bbf",
-        "name": "spacer",
-        "group": "5ecf1e5d.c16c4",
-        "order": 10,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "86d64116fdd08db3",
+        "id": "d3add09992de5a0c",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
@@ -412,7 +550,7 @@
         "height": 1
     },
     {
-        "id": "e20ddd487010dbac",
+        "id": "0a29e232aea4cb67",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
@@ -422,7 +560,7 @@
         "height": 1
     },
     {
-        "id": "fcb348dd08d4655c",
+        "id": "b5d0730d93c386ca",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
@@ -432,17 +570,7 @@
         "height": 1
     },
     {
-        "id": "6e0bc77ebfd6a671",
-        "type": "ui_spacer",
-        "z": "bdac0d87c40b4bbf",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 5,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "62d479e142771415",
+        "id": "d2b6433d39a2fece",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
@@ -452,37 +580,27 @@
         "height": 1
     },
     {
-        "id": "a4c146dfe81d4911",
+        "id": "659306acbf529d85",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
         "group": "1ed33e4c82d4fcac",
         "order": 7,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "dfc7f651abdb0309",
-        "type": "ui_spacer",
-        "z": "bdac0d87c40b4bbf",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 8,
         "width": 1,
         "height": 1
     },
     {
-        "id": "3b76c3b8ebe80ff1",
+        "id": "7e3738ab31148fa4",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
         "group": "1ed33e4c82d4fcac",
         "order": 9,
-        "width": 4,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "d1a7ab6672b40822",
+        "id": "d4df45fc5b68fca5",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
@@ -492,17 +610,7 @@
         "height": 1
     },
     {
-        "id": "4ff25de7694c2916",
-        "type": "ui_spacer",
-        "z": "bdac0d87c40b4bbf",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 11,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "6526e5cc4d692f1f",
+        "id": "e17c3cb4b16c4018",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
@@ -512,43 +620,93 @@
         "height": 1
     },
     {
-        "id": "b7d899eb2e0e4e3f",
+        "id": "ef194b0f9cb6ac9d",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "16609bb530a8d4f0",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 14,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "c03b55ceb3bec32c",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
         "group": "1ed33e4c82d4fcac",
         "order": 15,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "e888a590924fba26",
-        "type": "ui_spacer",
-        "z": "bdac0d87c40b4bbf",
-        "name": "spacer",
-        "group": "1ed33e4c82d4fcac",
-        "order": 16,
         "width": 1,
         "height": 1
     },
     {
-        "id": "9fdc9d004a2dcd97",
+        "id": "68ad9f9ecdc8834f",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
         "group": "1ed33e4c82d4fcac",
         "order": 17,
-        "width": 4,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "5386dc3a13c17b2c",
+        "id": "5a97a913faa7823a",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a8fd78e3410fe742",
         "type": "ui_spacer",
         "z": "bdac0d87c40b4bbf",
         "name": "spacer",
         "group": "1ed33e4c82d4fcac",
         "order": 20,
-        "width": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cd1e9afb9035c0e0",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 21,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "822b246cdd9ae21e",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5c79c7fa2aeaa084",
+        "type": "ui_spacer",
+        "z": "bdac0d87c40b4bbf",
+        "name": "spacer",
+        "group": "1ed33e4c82d4fcac",
+        "order": 25,
+        "width": 1,
         "height": 1
     },
     {
@@ -705,7 +863,7 @@
         "g": "221173cd0f9456d8",
         "name": "Stop CAM#1",
         "group": "5ecf1e5d.c16c4",
-        "order": 4,
+        "order": 5,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -1254,8 +1412,8 @@
         "g": "221173cd0f9456d8",
         "name": "WEBCAM CAMERA #1  Video Processing / Object Detection",
         "info": "",
-        "x": 260,
-        "y": 60,
+        "x": 540,
+        "y": 40,
         "wires": []
     },
     {
@@ -1372,6 +1530,109 @@
                 "8cd39b6c.1e3608"
             ]
         ]
+    },
+    {
+        "id": "1e40d86f201d0e33",
+        "type": "mqtt in",
+        "z": "ddeb3b89.ad9748",
+        "g": "221173cd0f9456d8",
+        "name": "",
+        "topic": "myapp/control/take_photoCamera",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "3acd38737e2fb02d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 180,
+        "y": 60,
+        "wires": [
+            [
+                "1491b6df.c56d59"
+            ]
+        ]
+    },
+    {
+        "id": "80780894450cfb6d",
+        "type": "ui_button",
+        "z": "e351b1251dfbc2f7",
+        "name": "",
+        "group": "ba1ff527abfa5261",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Update",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 80,
+        "wires": [
+            [
+                "49e78ff51c3a1ea3"
+            ]
+        ]
+    },
+    {
+        "id": "1482bcf69325aa92",
+        "type": "inject",
+        "z": "e351b1251dfbc2f7",
+        "name": "",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 120,
+        "wires": [
+            [
+                "49e78ff51c3a1ea3"
+            ]
+        ]
+    },
+    {
+        "id": "49e78ff51c3a1ea3",
+        "type": "random",
+        "z": "e351b1251dfbc2f7",
+        "name": "",
+        "low": "0",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 240,
+        "y": 100,
+        "wires": [
+            [
+                "7bc412b5f3730e2e"
+            ]
+        ]
+    },
+    {
+        "id": "7bc412b5f3730e2e",
+        "type": "mqtt out",
+        "z": "e351b1251dfbc2f7",
+        "name": "",
+        "topic": "iot/sensors/temp/room1/fmt/json",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ac59fe1f.451f3",
+        "x": 520,
+        "y": 100,
+        "wires": []
     },
     {
         "id": "937d602db7d2c135",
@@ -1553,12 +1814,12 @@
         "g": "80abc5d16045e7ca",
         "group": "1ed33e4c82d4fcac",
         "name": "",
-        "width": 2,
-        "height": 2,
-        "order": 14,
+        "width": 5,
+        "height": 3,
+        "order": 18,
         "category": "Pictures",
         "file": "IBM_i_circle_logo.png",
-        "layout": "adjust",
+        "layout": "expand",
         "showcontrols": true,
         "loop": true,
         "onstart": false,
@@ -1577,7 +1838,7 @@
         "g": "7b39fc278818f569",
         "group": "1ed33e4c82d4fcac",
         "name": "",
-        "order": 13,
+        "order": 16,
         "width": 9,
         "height": 2,
         "columns": [
@@ -1672,7 +1933,7 @@
         "z": "bdac0d87c40b4bbf",
         "g": "7b39fc278818f569",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1746,9 +2007,9 @@
         "g": "7b39fc278818f569",
         "group": "1ed33e4c82d4fcac",
         "name": "DB2 Events",
-        "order": 19,
-        "width": "15",
-        "height": 1,
+        "order": 23,
+        "width": 15,
+        "height": "4",
         "columns": [
             {
                 "field": "ID",
@@ -1879,16 +2140,634 @@
         "z": "bdac0d87c40b4bbf",
         "g": "7b39fc278818f569",
         "group": "1ed33e4c82d4fcac",
-        "order": 18,
+        "order": 22,
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "Event History (Db2 for i) ",
+        "label": "Event Records (Db2 for i) ",
         "format": "",
-        "layout": "row-spread",
+        "layout": "row-left",
         "className": "",
         "x": 710,
         "y": 200,
+        "wires": []
+    },
+    {
+        "id": "350ac4fe0341adef",
+        "type": "ui_button",
+        "z": "bdac0d87c40b4bbf",
+        "name": "",
+        "group": "1ed33e4c82d4fcac",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Capture CAM#1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-camera fa-2x",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 160,
+        "y": 740,
+        "wires": [
+            [
+                "a6762dde5f047a41"
+            ]
+        ]
+    },
+    {
+        "id": "f336b61e61e0c6fe",
+        "type": "ui_button",
+        "z": "bdac0d87c40b4bbf",
+        "name": "",
+        "group": "1ed33e4c82d4fcac",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Capture CAM#2 (Rasp)",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-camera fa-2x",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 190,
+        "y": 800,
+        "wires": [
+            [
+                "e882e002e2d982d5"
+            ]
+        ]
+    },
+    {
+        "id": "a6762dde5f047a41",
+        "type": "mqtt out",
+        "z": "bdac0d87c40b4bbf",
+        "name": "",
+        "topic": "myapp/control/take_photoCamera",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "3acd38737e2fb02d",
+        "x": 480,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "e882e002e2d982d5",
+        "type": "mqtt out",
+        "z": "bdac0d87c40b4bbf",
+        "name": "",
+        "topic": "myapp/control/take_photoCamera1",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "3acd38737e2fb02d",
+        "x": 500,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "7c28e45622e028df",
+        "type": "ui_button",
+        "z": "bdac0d87c40b4bbf",
+        "name": "",
+        "group": "1ed33e4c82d4fcac",
+        "order": 11,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "RESTART CAM#2 (Rasp)",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-camera fa-2x",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 190,
+        "y": 860,
+        "wires": [
+            [
+                "46039b9768bb39b5"
+            ]
+        ]
+    },
+    {
+        "id": "46039b9768bb39b5",
+        "type": "mqtt out",
+        "z": "bdac0d87c40b4bbf",
+        "name": "",
+        "topic": "myapp/control/restart_Camera1",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "3acd38737e2fb02d",
+        "x": 490,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "d388b48fcbed93a1",
+        "type": "ui_gauge",
+        "z": "bdac0d87c40b4bbf",
+        "name": "",
+        "group": "ba1ff527abfa5261",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature Room1",
+        "label": "degres",
+        "format": "",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 540,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "07b44990e5d5b5f6",
+        "type": "ui_chart",
+        "z": "bdac0d87c40b4bbf",
+        "name": "",
+        "group": "ba1ff527abfa5261",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature Room1 (vs. time)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 570,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dbe404c49cfed031",
+        "type": "mqtt in",
+        "z": "bdac0d87c40b4bbf",
+        "name": "",
+        "topic": "iot/sensors/temp/+/fmt/json",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ac59fe1f.451f3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 600,
+        "wires": [
+            [
+                "d388b48fcbed93a1",
+                "07b44990e5d5b5f6"
+            ]
+        ]
+    },
+    {
+        "id": "529c7b3c.942cb4",
+        "type": "debug",
+        "z": "dd44b582.841dd",
+        "name": "cpustatus",
+        "active": true,
+        "complete": "false",
+        "x": 780,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e9e495b9.ae3f08",
+        "type": "template",
+        "z": "dd44b582.841dd",
+        "name": "danger",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "mustache",
+        "template": "Temperature ({{payload}}) critical",
+        "x": 632,
+        "y": 428,
+        "wires": [
+            [
+                "529c7b3c.942cb4"
+            ]
+        ]
+    },
+    {
+        "id": "340c5d43.4757e2",
+        "type": "template",
+        "z": "dd44b582.841dd",
+        "name": "safe",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "mustache",
+        "template": "Temperature({{payload}}) within safe limits",
+        "x": 633,
+        "y": 334,
+        "wires": [
+            [
+                "529c7b3c.942cb4"
+            ]
+        ]
+    },
+    {
+        "id": "95094436.859448",
+        "type": "switch",
+        "z": "dd44b582.841dd",
+        "name": "temp thresh",
+        "property": "payload",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "40"
+            },
+            {
+                "t": "gt",
+                "v": "40"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 2,
+        "x": 469,
+        "y": 383,
+        "wires": [
+            [
+                "340c5d43.4757e2"
+            ],
+            [
+                "e9e495b9.ae3f08"
+            ]
+        ]
+    },
+    {
+        "id": "bf9c9383.ac1a8",
+        "type": "function",
+        "z": "dd44b582.841dd",
+        "name": "temp",
+        "func": "\nreturn{payload:msg.payload.d.temp};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 282,
+        "wires": [
+            [
+                "93357911.034f48",
+                "95094436.859448",
+                "2d7d439.148363c",
+                "b81aae56.3c6c38"
+            ]
+        ]
+    },
+    {
+        "id": "93357911.034f48",
+        "type": "debug",
+        "z": "dd44b582.841dd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1465f864.c9603",
+        "type": "mqtt in",
+        "z": "dd44b582.841dd",
+        "name": "",
+        "topic": "\"iot-2/cmd/sendsensordata/fmt/json\"",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "ac59fe1f.451f3",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 160,
+        "y": 282,
+        "wires": [
+            [
+                "bf9c9383.ac1a8",
+                "93357911.034f48",
+                "ab3c1e92.dc32d",
+                "bde7e232.e83fd"
+            ]
+        ]
+    },
+    {
+        "id": "c415a3f5.15576",
+        "type": "inject",
+        "z": "dd44b582.841dd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "a361ee67.be2688"
+            ]
+        ]
+    },
+    {
+        "id": "a361ee67.be2688",
+        "type": "function",
+        "z": "dd44b582.841dd",
+        "name": "",
+        "func": "msg.payload = {d:{\"temp\":68,\"humidity\":79,\"objectTemp\":24}};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 120,
+        "wires": [
+            [
+                "5b61075a.e46258"
+            ]
+        ]
+    },
+    {
+        "id": "5b61075a.e46258",
+        "type": "mqtt out",
+        "z": "dd44b582.841dd",
+        "name": "",
+        "topic": "\"iot-2/cmd/sendsensordata/fmt/json\"",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ac59fe1f.451f3",
+        "x": 590,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2d7d439.148363c",
+        "type": "ui_gauge",
+        "z": "dd44b582.841dd",
+        "name": "",
+        "group": "a54677be.62b79",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "40",
+        "x": 410,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ab3c1e92.dc32d",
+        "type": "function",
+        "z": "dd44b582.841dd",
+        "name": "﻿﻿Humidity",
+        "func": "return{payload:msg.payload.d.humidity,topic:'Humidity'};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 260,
+        "y": 560,
+        "wires": [
+            [
+                "52240a4a.34186c",
+                "b81aae56.3c6c38"
+            ]
+        ]
+    },
+    {
+        "id": "bde7e232.e83fd",
+        "type": "function",
+        "z": "dd44b582.841dd",
+        "name": "Object Temperature",
+        "func": "return{payload:msg.payload.d.objectTemp,topic:'Object temperature'};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 680,
+        "wires": [
+            [
+                "b81aae56.3c6c38",
+                "c436079a.0a0d18"
+            ]
+        ]
+    },
+    {
+        "id": "52240a4a.34186c",
+        "type": "ui_gauge",
+        "z": "dd44b582.841dd",
+        "name": "",
+        "group": "4c2982c.15e91fc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 420,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "b81aae56.3c6c38",
+        "type": "ui_chart",
+        "z": "dd44b582.841dd",
+        "name": "",
+        "group": "80fcf2f5.7dc2c",
+        "order": 1,
+        "width": 30,
+        "height": 5,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e9",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 2,
+        "x": 710,
+        "y": 560,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c436079a.0a0d18",
+        "type": "ui_gauge",
+        "z": "dd44b582.841dd",
+        "name": "",
+        "group": "6bc9a9f0.9ccf58",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Object Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "80",
+        "seg2": "95",
+        "x": 450,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "77269d23.9ef5ec",
+        "type": "function",
+        "z": "dd44b582.841dd",
+        "name": "Test Text Change",
+        "func": "\nvar PrevMsg = context.get('PrevMsg') || \"\";\n\nif (msg.payload === PrevMsg) {\n     msg.payload = \" \";\n} else {\n    context.set(\"PrevMsg\", msg.payload);  \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 910,
+        "y": 440,
+        "wires": [
+            [
+                "7e816089.9b95d8"
+            ]
+        ]
+    },
+    {
+        "id": "7e816089.9b95d8",
+        "type": "debug",
+        "z": "dd44b582.841dd",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1110,
+        "y": 440,
         "wires": []
     }
 ]
