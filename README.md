@@ -1,11 +1,11 @@
 Next Gen Apps on IBM i : vms-iot-dashboard example
 =================
-##  Augmented WMS system with Internet of things 
+##  Augmented Warehouse Management System with Internet of things 
 This sample application includes a Node-RED dashboard that can run on a laptop (x86 Mac, Linux) integrated with an IBM i back-end. 
 - IoT & Event Processing & dashboard with micro-services running on IBM i : ActiveMQ (MQTT broker), Kafka...
-- Db2 for i : Nosql/JSON processing & Geospatial Analytics
-- RPG : Core Business Rules & integration
-
+- Db2 for i : Nosql/JSON processing & Geospatial Analytics (IoT JSON data in DB2 + real time distance computation/geofencing)
+- RPG : Core Business Rules & integration with Kafka (to do - see this [IBM Developer article](https://developer.ibm.com/tutorials/power10-business-inferencing-at-scale-with-mma/) for more inspiration) 
+- Video trailer & short demo [here on BOX](https://ibm.box.com/v/ibmi-vms-nextgen-trailer)
 ![](./vms-ibmi-overview1.jpg)
 
 ### Note that there are still features to implement. Work in progress.
@@ -32,4 +32,4 @@ sudo n 10.16.0
 
 ## About
 
-Author: Benoit Marolleau benoit.marolleau@fr.ibm.com
+Author: Benoit Marolleau benoit.marolleau@fr.ibm.com  , please reach out for any questions or a feedback!! 
