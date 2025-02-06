@@ -6,8 +6,9 @@ This sample application includes a Node-RED dashboard that can run on a laptop (
 - Db2 for i : Nosql/JSON processing & Geospatial Analytics (IoT JSON data in DB2 + real time distance computation/geofencing)
 - RPG : Core Business Rules & integration with Kafka (to do - see this [IBM Developer article](https://developer.ibm.com/tutorials/power10-business-inferencing-at-scale-with-mma/) for more inspiration) 
 - Video trailer & short demo [here on BOX](https://ibm.box.com/v/ibmi-vms-nextgen-trailer)
-![](./vms-ibmi-overview1.jpg)
 - Introduction presentation: [MQTT , Kafka integration with IBM i apps](https://ibm.box.com/v/ibmi-vms-intro)
+
+![](./vms-ibmi-overview1.jpg)
 
 ### Note that there are still features to implement. Work in progress.
 
